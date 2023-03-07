@@ -1,0 +1,13 @@
+---
+- name: Collection test using zip
+  hosts: all
+  gather_facts: False
+  become: False
+  tasks:
+  - name: Create a file to ZIP
+    shell: df -h > myfilesystems.txt
+
+  - name: Perform ZIP
+    community.general.archive:
+      path: myfilesystems.txt
+      remove: true
