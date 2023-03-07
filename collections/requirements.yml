@@ -1,4 +1,4 @@
 ---
 collections:
 - community.vmware
-#- community.general
+- community.general
