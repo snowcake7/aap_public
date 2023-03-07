@@ -11,3 +11,4 @@
     community.general.archive:
       path: myfilesystems.txt
       remove: true
+      format: zip
