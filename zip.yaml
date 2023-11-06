@@ -3,6 +3,8 @@
   hosts: all
   gather_facts: False
   become: False
+  vars:
+    mymsg: "{{ vaultmsg }}"
   tasks:
   - name: Create a file to ZIP
     shell: df -h > myfilesystems.txt
@@ -15,4 +17,4 @@
 
   - name: Debug
     debug:
-      msg: "{{ vaultmsg }}"
+      msg: "{{ mymsg }}"
