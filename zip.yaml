@@ -12,3 +12,7 @@
       path: myfilesystems.txt
       remove: true
       format: zip
+
+  - name: Debug
+    debug:
+      msg: "{{ vaultmsg }}"
